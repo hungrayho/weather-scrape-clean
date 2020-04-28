@@ -1,4 +1,4 @@
-import settings
+from settings import settings
 import os
 
 if not os.path.exists(settings.PATH):

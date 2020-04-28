@@ -1,4 +1,4 @@
 import os
 
-URLS = ['https://github.com/hungrayho/weather-scrape-clean']
+URLS = ['https://www.hko.gov.hk/en/wxinfo/pastwx/metob201908.htm']
 PATH = os.getcwd() + os.sep + 'data'
