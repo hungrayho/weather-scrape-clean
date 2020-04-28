@@ -1,4 +1,4 @@
-import settings
+from settings import settings
 from downloader.html import download_clean
 
 if __name__ == '__main__':
