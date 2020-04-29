@@ -1,8 +1,10 @@
 import os
 from settings import settings
 from downloader.html import download_clean
+from downloader.utils import extract_date
 
 if __name__ == '__main__':
-    for i, url in enumerate(settings.URLS):
+    for url in settings.URLS:
         clean_df = download_clean(url)
-        clean_df.to_csv(settings.PATH + os.sep + str(i) + '.csv')
+        year, month = extract_date(url)
+        clean_df.to_csv(f'{settings.PATH}{os.sep}{year}-{month}.csv')
